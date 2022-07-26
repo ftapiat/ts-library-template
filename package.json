@@ -1,6 +1,6 @@
 {
-  "name": "ts-library-template",
-  "version": "0.0.1",
+  "name": "@ftapiat/ts-library-template",
+  "version": "0.0.2",
   "description": "Plantilla para desarrollar paquetes de Javascript usando Typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,8 +12,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "Cambiar",
@@ -21,8 +21,15 @@
     "Palabras Clave",
     "Para indexar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftapiat/ts-library-template.git"
+  },
   "author": "ftapiat",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
@@ -44,5 +51,13 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/ftapiat/ts-library-template/issues"
+  },
+  "homepage": "https://github.com/ftapiat/ts-library-template#readme",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib"
+  }
 }
