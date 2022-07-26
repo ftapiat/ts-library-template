@@ -1,6 +1,6 @@
 {
   "name": "@ftapiat/ts-library-template",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Plantilla para desarrollar paquetes de Javascript usando Typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
