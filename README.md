@@ -8,13 +8,28 @@ Esto instalará:
 - Prettier
 - Typescript
 
+# Modificaciones del template para proyecto
+
+- Debes eliminar la carpeta **doc**.
+- En **package.json** debes reemplazar:
+  - **@ftapiat/ts-library-template** por el nombre de tu proyecto.
+  - **version** por la versión de tu proyecto.
+  - **description** por la descripción de tu proyecto.
+  - **keywords** por las palabras clave de tu proyecto.
+  - **author** por el autor de tu proyecto.
+  - Los datos de **repository** por la url de repositorio de tu proyecto.
+  - **license** por la licencia que usarás.
+  - **directories** puedes eliminar **doc** si eliminaste la carpeta.
+- Si vas a desarrollar para una versión superior de ES5, debes modificar la propiedad 
+**target** del archivo **tsconfig.json**.
+
 # EsLint
 
 Este proyecto tiene implementado ESLint. Este es una herramienta de linting que se encarga de revisar el código de 
 una forma automática y correcta.
 
-Puede que al abrir el proyecto este esté desactivado, por lo que tendrá que activarlo manualmente. Si está usando una 
-herramienta de JetBrains como PHPStorm o WebStorm, puede activarlo en la sección 
+Puede que al abrir el proyecto este esté desactivado, por lo que tendrás que activarlo manualmente. Si estás usando una 
+herramienta de JetBrains como PHPStorm o WebStorm, puedes activarla en la sección 
 **Languages & Frameworks > Code Quality Tools > ESLint**, seleccionando la opción **Automatic ESLint configuration** 
 de la siguiente forma:
 
@@ -22,10 +37,11 @@ de la siguiente forma:
 
 # Prettier
 
-Este proyecto cuenta con Prettier, que es una herramienta que se encarga de formatear el código de una forma más bonita. Esto lo realiza
-corrigiendo o agregando espacios, cambiando las comillas dobles por comillas simples (según el contexto), etc.
+Este proyecto cuenta con Prettier, que es una herramienta que se encarga de formatear el código de una forma más bonita. 
+Esto lo realiza corrigiendo o agregando espacios, cambiando las comillas dobles por comillas simples
+(según el contexto), etc.
 
-Para asociarlo con el comando de JetBrains para formatear código (**CTRL + ALT + L**), se debe dirigir a
+Para asociarlo con el comando de JetBrains para formatear código (**CTRL + ALT + L**), debes dirigirte a
 **Languages & Frameworks > JavaScript > Prettier**, seleccionando la opción **on 'Reformat Code' action** 
 de la siguiente forma:
 
