@@ -1,11 +1,11 @@
 {
   "name": "@ftapiat/ts-library-template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Plantilla para desarrollar paquetes de Javascript usando Typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "format": "prettier --config .prettierrc.json --write \"src/**/*.ts\"",
     "lint": "npx eslint \"{src,apps,libs,test}/**/*.ts\" -c .eslintrc.json",
     "test": "jest --config jest.config.json",
@@ -46,7 +46,8 @@
     "prettier": "^2.7.1",
     "regenerator-runtime": "^0.13.9",
     "ts-jest": "^28.0.7",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "tsc-alias": "^1.7.0"
   },
   "files": [
     "lib/**/*"
@@ -57,6 +58,7 @@
   "homepage": "https://github.com/ftapiat/ts-library-template#readme",
   "directories": {
     "doc": "doc",
-    "lib": "lib"
+    "lib": "lib",
+    "tsc-alias": "^1.7.0"
   }
 }
